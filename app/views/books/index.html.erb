@@ -1,3 +1,4 @@
+<table>
 <div>
 <% @books.each do |book| %>
   <span class="Show"><%= link_to "Show", book_path(book.id) %></span>
@@ -5,6 +6,6 @@
   <span class="destroy"><%= link_to "Destroy", destroy_book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか?" %></span>
 <% end %>
 </div>
-
+</table>
 
 
