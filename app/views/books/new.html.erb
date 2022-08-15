@@ -1,7 +1,5 @@
 <h2>New book</h2>
-<form class = "new_book" id = "new_book" action = "/books" accept-charset = "UTF-8" method = "post">
-<input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="HxKkfxOUOpUpySoTe9tO3VqlHFwyh3r3XywbCt6IHogdmnpHHfilNYdkIA3Ec/CUw2RpFuqHNmvpb8nSkOOc/Q==" />
-  
+
   <% if @book.errors.any? %>
     <div id = "error_explanation">
       <h2><%= @book.errors.count %>errors prohibited this book from being saved:</h2>
